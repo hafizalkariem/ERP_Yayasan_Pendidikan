@@ -1,0 +1,27 @@
+graph TD
+  subgraph Hardware
+    
+    DatabaseServer[Database Server]
+    WebServer[Web Server]
+    AppServer[Application Server]
+  end
+
+  subgraph ERPSystem
+   
+    ERP[ERP System]
+    BusinessLogic[Business Logic]
+    Database[Database]
+  end
+
+  subgraph Users
+    
+    User[Users]
+  end
+
+  DatabaseServer --> Database
+  WebServer --> ERP
+  AppServer --> BusinessLogic
+  User --> WebServer
+  User --> AppServer
+  BusinessLogic --> Database
+  ERP --> Database
