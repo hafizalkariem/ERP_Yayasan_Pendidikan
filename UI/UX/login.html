@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login ERP</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        background-color: #f1f1f1;
+        background-image: url(/image/moroccan-flower.png);
+        text-align: center;
+      }
+
+      .login-container {
+        box-sizing: border-box;
+        width: 350px;
+        margin: 25vh auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .login-container h2 {
+        margin-top: 0;
+        color: #333;
+      }
+
+      .login-form input[type="text"],
+      .login-form input[type="password"] {
+        width: 90%;
+        padding: 10px;
+
+        margin: 10px auto;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      .login-form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      .create-account {
+        margin-top: 10px;
+      }
+
+      .create-account a {
+        text-decoration: none;
+        color: #007bff;
+      }
+      .plaint-text {
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login to Your Account</h2>
+      <form class="login-form" action="proses_login.php" method="post">
+        <input
+          type="text"
+          class="plaint-text"
+          name="username"
+          placeholder="Username"
+          required
+        />
+        <input
+          type="password"
+          class="plaint-text"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <button type="submit">Login</button>
+      </form>
+      <div class="create-account">
+        Belum punya akun? <a href="create_account.php">Buat akun</a>
+      </div>
+    </div>
+  </body>
+</html>
